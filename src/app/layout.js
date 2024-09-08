@@ -1,0 +1,21 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "Portfolio",
+  description: "Adhiraj Saha's Portfolio",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+      <link
+          rel="icon"
+          type="image/svg+xml"
+          href="/assets/favicon.ico"
+        />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
