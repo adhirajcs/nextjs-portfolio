@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Background from "@/components/Background";
+import Hero from "@/components/Hero";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export default function Home() {
   return (
     <>
-      <div className="h-screen max-h-screen">
+      <div className="h-screen max-h-screen dark">
         <Background />
-        <div className="relative z-10 text-white p-10 h-screen">
-          <h1 className="text-4xl">Welcome to My Portfolio</h1>
-          <p className="mt-4">Check out my work below.</p>
-        </div>
+        <Hero />
+        <BackgroundBeams />
       </div>
     </>
   );
