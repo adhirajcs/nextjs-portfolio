@@ -24,7 +24,7 @@ const Hero = () => {
         {/* Left Side Content */}
         <div className="text-justify lg:text-left space-y-4 pb-8 lg:pb-0">
           <TypewriterEffectSmooth words={words1} />
-          <TextGenerateEffect words={words2} className="w-2/3" />
+          <TextGenerateEffect words={words2} className="w-11/12 lg:w-2/3" />
         </div>
 
         {/* Right Side Profile Picture */}
