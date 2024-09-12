@@ -2,6 +2,7 @@ import Image from "next/image";
 import Background from "@/components/Background";
 import Hero from "@/components/Hero";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Background />
         <Hero />
         <BackgroundBeams />
+        <NavBar />
       </div>
     </>
   );
