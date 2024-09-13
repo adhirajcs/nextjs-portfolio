@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <link
           rel="icon"
           type="image/svg+xml"
-          href="/assets/favicon.ico"
+          href="/assets/icon.png"
         />
       </head>
       <body>{children}</body>

@@ -20,28 +20,28 @@ const NavBar = () => {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "/",
+      href: "#hero",
     },
     {
       title: "About",
       icon: (
         <IconMoodSmile className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#hero",
+      href: "#about",
     },
     {
       title: "Projects",
       icon: (
         <IconDeviceDesktop className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#hero",
+      href: "#projects",
     },
     {
       title: "Education",
       icon: (
         <IconSchool className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#education",
     },
     // {
     //   title: "Aceternity UI",
@@ -60,7 +60,7 @@ const NavBar = () => {
       icon: (
         <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#contact",
     },
     {
       title: "LinkedIn",
@@ -78,7 +78,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="absolute bottom-0 sm:left-0 left-80 right-0 flex items-center justify-center h-[5rem] z-50">
+    <div className="fixed bottom-0 sm:left-0 left-80 right-0 flex items-center justify-center h-[5rem] z-50">
       <FloatingDock items={links} />
     </div>
   );
