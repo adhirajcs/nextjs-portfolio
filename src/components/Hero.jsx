@@ -30,8 +30,8 @@ const Hero = () => {
           <TextGenerateEffect words={words2} className="w-11/12 lg:w-2/3" />
         </div>
 
-        {/* Right Side Profile Picture */}
-        <div className="mb-6 lg:mb-0 flex-shrink-0">
+        {/* Right Side Profile Picture with Glare (only on desktop) */}
+        <div className="hidden lg:block mb-6 lg:mb-0 flex-shrink-0">
           <GlareCard className="flex flex-col items-center justify-center">
             <img
               src="/assets/profile-picture.png"
@@ -40,7 +40,18 @@ const Hero = () => {
             />
           </GlareCard>
         </div>
+
+        {/* Profile Picture (only on mobile) */}
+        <div className="lg:hidden mb-6 lg:mb-0 flex-shrink-0">
+          <img
+            src="/assets/profile-picture.png"
+            alt="Profile Picture"
+            className="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-full shadow-lg"
+          />
+        </div>
       </div>
+
+      {/* Cool Mode Button */}
       <div className="flex flex-col items-start lg:pt-4">
         <CoolMode>
           <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
