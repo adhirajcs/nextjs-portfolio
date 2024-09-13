@@ -16,7 +16,7 @@ const Hero = () => {
     },
   ];
 
-  const words2 = `I'm passionate about web development, blockchain technology, and building cool projects that make a difference. I love experimenting with the latest technologies and crafting experiences that are intuitive and engaging. My skills include ReactJS, Python, and Django.`;
+  const words2 = `An Aspiring Software Developer with skills in ReactJS, Next.js, Python, and Django.`;
 
   return (
     <div
