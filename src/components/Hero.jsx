@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <div className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-36">
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-evenly">
+      <section id="#hero" className="flex flex-col lg:flex-row items-start lg:items-center justify-evenly">
         {/* Left Side Content */}
         <div className="text-justify lg:text-left space-y-4 pb-8 lg:pb-0">
           <TypewriterEffectSmooth words={words1} />
@@ -37,7 +37,7 @@ const Hero = () => {
             />
           </GlareCard>
         </div>
-      </div>
+      </section>
       <div className="flex flex-col items-start lg:items-end lg:pt-4">
         <CoolMode>
           <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">

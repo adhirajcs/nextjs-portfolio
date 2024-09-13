@@ -4,11 +4,12 @@ import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
-  IconBrandX,
-  IconExchange,
+  IconBrandLinkedin,
+  IconMail,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconSchool,
+  IconMoodSmile,
+  IconDeviceDesktop,
 } from "@tabler/icons-react";
 import Image from "next/image";
 
@@ -19,64 +20,66 @@ const NavBar = () => {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
+      href: "/",
+    },
+    {
+      title: "About",
+      icon: (
+        <IconMoodSmile className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#hero",
+    },
+    {
+      title: "Projects",
+      icon: (
+        <IconDeviceDesktop className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#hero",
+    },
+    {
+      title: "Education",
+      icon: (
+        <IconSchool className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
-
+    // {
+    //   title: "Aceternity UI",
+    //   icon: (
+    //     <Image
+    //       src="/assets/favicon.ico"
+    //       width={20}
+    //       height={20}
+    //       alt="Aceternity Logo"
+    //     />
+    //   ),
+    //   href: "#",
+    // },
     {
-      title: "Products",
+      title: "Contact",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
-      title: "Components",
+      title: "LinkedIn",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <Image
-          src="/assets/favicon.ico"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "https://www.linkedin.com/in/adhirajsaha",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/adhirajcs",
     },
   ];
   return (
-    <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center h-[5rem] z-50">
-      <FloatingDock
-        ClassName="translate-y-20"
-        items={links}
-      />
+    <div className="absolute bottom-0 sm:left-0 left-80 right-0 flex items-center justify-center h-[5rem] z-50">
+      <FloatingDock items={links} />
     </div>
   );
 };
