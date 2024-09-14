@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import LetterPullup from "./magicui/letter-pullup";
-import { TextHoverEffect } from "./ui/text-hover-effect";
 
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -10,14 +9,12 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-10"
+      className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-20"
       onMouseEnter={() => setIsHovered(true)} // Trigger animation on hover
       onMouseLeave={() => setIsHovered(false)} // Reset when not hovering
     >
       {/* Heading */}
-      <div className="flex justify-center items-center">
-        <TextHoverEffect text="Contact Me" width="300" />
-      </div>
+      <h1 className="text-4xl font-bold text-center mb-10">Contact Me</h1>
 
       {/* Main content with flex-row layout */}
       <div className="flex flex-col md:flex-row justify-around items-start md:items-center">

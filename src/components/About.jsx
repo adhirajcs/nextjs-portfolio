@@ -1,7 +1,6 @@
 "use client";
 
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { TextHoverEffect } from "./ui/text-hover-effect";
 
 const About = () => {
   const introText = `I'm Adhiraj Saha, a postgraduate in MCA and also hold a BCA degree. I'm a passionate web developer with a keen interest in blockchain technology. With a strong foundation in ReactJS, Python, and Django, I'm focused on creating projects that make a difference.
@@ -10,13 +9,10 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-10"
+      className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-20"
     >
       {/* Heading */}
-      {/* <h1 className="text-4xl font-bold text-center mb-10">About Me</h1> */}
-      <div className="flex justify-center items-center">
-        <TextHoverEffect text="About Me" width="300" />
-      </div>
+      <h1 className="text-4xl font-bold text-center mb-10">About Me</h1>
 
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-around space-y-8 lg:space-y-0">
         {/* Left Side - Profile Image */}

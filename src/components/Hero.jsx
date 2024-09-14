@@ -8,7 +8,10 @@ import { CoolMode } from "./magicui/cool-mode";
 const Hero = () => {
   const words1 = [
     {
-      text: `"Hello There"`,
+      text: `"Hello There" `,
+    },
+    {
+      text:"",
     },
     {
       text: `I am Adhiraj Saha.`,
