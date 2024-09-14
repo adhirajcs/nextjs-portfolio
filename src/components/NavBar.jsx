@@ -78,7 +78,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="fixed bottom-0 sm:left-0 left-80 right-0 flex items-center justify-center h-[5rem] z-50">
+    <div className="fixed bottom-0 sm:left-0 left-0 right-0 flex items-center justify-center h-[5rem] z-50">
       <FloatingDock items={links} />
     </div>
   );
