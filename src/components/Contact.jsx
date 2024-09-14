@@ -64,7 +64,7 @@ const Contact = () => {
         </div>
 
         {/* Vertical Line */}
-        <div className="hidden lg:block lg:w-[1px] lg:bg-gray-300 lg:h-[calc(100vh_-_3rem)] mx-8"></div>
+        <div className="hidden lg:block lg:w-[1px] lg:bg-slate-600 lg:h-80 mx-8"></div>
 
         {/* Animation on the Right */}
         <div className="w-full pt-24 lg:pt-0 md:pl-4 lg:w-1/2 flex justify-center">
