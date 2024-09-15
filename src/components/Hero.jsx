@@ -3,7 +3,7 @@
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { GlareCard } from "./ui/glare-card";
-import { CoolMode } from "./magicui/cool-mode";
+import { EncryptButton } from "./ui/EncryptButton";
 
 const Hero = () => {
   const words1 = [
@@ -11,7 +11,7 @@ const Hero = () => {
       text: `"Hello There" `,
     },
     {
-      text:"",
+      text: "",
     },
     {
       text: `I am Adhiraj Saha.`,
@@ -56,7 +56,7 @@ const Hero = () => {
 
       {/* Cool Mode Button */}
       <div className="flex flex-col items-start lg:pt-4">
-        
+          <EncryptButton />
       </div>
     </div>
   );
