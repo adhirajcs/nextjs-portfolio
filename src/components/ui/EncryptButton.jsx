@@ -3,7 +3,7 @@ import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const TARGET_TEXT = "View Resume!";
-const CYCLES_PER_LETTER = 2;
+const CYCLES_PER_LETTER = 1;
 const SHUFFLE_TIME = 50;
 
 const CHARS = "!@#$%^&*():{};|,.<>/?";
@@ -55,7 +55,7 @@ export const EncryptButton = () => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="group relative overflow-hidden rounded-lg border-[1px] border-neutral-500 bg-neutral-700 px-4 py-2 font-mono font-medium uppercase text-neutral-300 transition-colors hover:text-indigo-300"
+      className="group relative overflow-hidden rounded-lg border-[1px] border-slate-500 bg-slate-800 px-4 py-2 font-mono font-medium uppercase text-neutral-300 transition-colors hover:text-indigo-300"
     >
       <div className="relative z-10 flex items-center gap-2">
         <FiLock />
