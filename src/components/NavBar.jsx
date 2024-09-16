@@ -68,6 +68,7 @@ const NavBar = () => {
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://www.linkedin.com/in/adhirajsaha",
+      target: "_blank",
     },
     {
       title: "GitHub",
@@ -75,6 +76,7 @@ const NavBar = () => {
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "https://github.com/adhirajcs",
+      target: "_blank",
     },
   ];
   return (

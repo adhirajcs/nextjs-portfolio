@@ -93,7 +93,8 @@ function IconContainer({
   mouseX,
   title,
   icon,
-  href
+  href,
+  target = "_self"
 }) {
   let ref = useRef(null);
 
@@ -134,7 +135,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    (<Link href={href} target="_blank">
+    (<Link href={href} target={target}>
       <motion.div
         ref={ref}
         style={{ width, height }}
