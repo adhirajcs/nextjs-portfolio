@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LetterPullup from "./magicui/letter-pullup";
+import LetterPullup from "@/components/magicui/letter-pullup";
 
 const Contact = () => {
   const [isHovered, setIsHovered] = useState(false);

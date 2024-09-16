@@ -1,6 +1,7 @@
 "use client";
 
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import IconCloud from "@/components/magicui/icon-cloud";
 
 const About = () => {
   const introText = `I'm Adhiraj Saha, a postgraduate in MCA and also hold a BCA degree. I'm a passionate web developer with a keen interest in blockchain technology. With a strong foundation in ReactJS, Python, and Django, I'm focused on creating projects that make a difference.

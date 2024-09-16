@@ -1,9 +1,9 @@
 "use client";
 
-import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
-import { GlareCard } from "./ui/glare-card";
-import { EncryptButton } from "./ui/EncryptButton";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { GlareCard } from "@/components/ui/glare-card";
+import { EncryptButton } from "@/components/ui/EncryptButton";
 
 const Hero = () => {
   const words1 = [
