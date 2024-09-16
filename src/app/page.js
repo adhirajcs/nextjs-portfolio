@@ -11,14 +11,14 @@ import Education from "@/components/Education";
 export default function Home() {
   return (
     <>
-      <div className="h-screen max-h-screen dark">
         <Background />
+        <BackgroundBeams />
+      <div className="dark flex flex-col items-center justify-center text-center px-4 sm:px-6">
         <Hero />
         <About />
         <Projects />
         <Education />
         <Contact />
-        <BackgroundBeams />
         <NavBar />
       </div>
     </>
