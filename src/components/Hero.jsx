@@ -24,12 +24,12 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-36 flex flex-col"
+      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-36 flex flex-col items-center"
     >
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-evenly w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
         {/* Left Side Content */}
-        <div className="text-justify lg:text-left space-y-4 pb-8 lg:pb-0">
-          <TypewriterEffectSmooth words={words1} />
+        <div className="text-right lg:text-left space-y-4 pb-8 lg:pb-0">
+          <TypewriterEffectSmooth words={words1}/>
           <TextGenerateEffect words={words2} className="w-11/12 lg:w-2/3" />
         </div>
 
