@@ -43,22 +43,22 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-20"
+      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-10 flex flex-col items-center"
     >
       {/* Heading */}
-      <h1 className="text-4xl font-bold text-center mb-10">About Me</h1>
+      <h1 className="text-4xl font-bold text-center pb-8">About Me</h1>
 
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-around space-y-8 lg:space-y-0">
-        {/* Left Side - Profile Image */}
-        <div className="mb-6 lg:mb-0 flex-shrink-0">
-          <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+      <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
+        {/* Left Side - Icon Cloud */}
+        <div className="flex-shrink-0 mb-6 lg:mb-0 flex items-center justify-center">
+          <div className="h-48 w-48 sm:h-60 sm:w-60 lg:h-72 lg:w-72">
           <IconCloud iconSlugs={slugs} />
-          </div>
+        </div>
         </div>
 
         {/* Right Side - Introduction Text */}
-        <div className="text-left space-y-4 lg:w-2/3">
-            <TextGenerateEffect words={introText} filter={false} />
+        <div className="text-center lg:text-left lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6">
+          <TextGenerateEffect words={introText} filter={false} />
         </div>
       </div>
     </div>
