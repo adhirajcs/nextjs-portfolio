@@ -11,8 +11,8 @@ import Education from "@/components/Education";
 export default function Home() {
   return (
     <>
-        <Background />
-        <BackgroundBeams />
+      <Background />
+      <BackgroundBeams />
       <div className="dark flex flex-col items-center justify-center text-center px-4 sm:px-6">
         <Hero />
         <About />
