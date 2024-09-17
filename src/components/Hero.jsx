@@ -24,9 +24,9 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative z-10 text-white h-screen px-8 lg:px-56 py-10 lg:pt-36"
+      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-36 flex flex-col"
     >
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-evenly">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-evenly w-full">
         {/* Left Side Content */}
         <div className="text-justify lg:text-left space-y-4 pb-8 lg:pb-0">
           <TypewriterEffectSmooth words={words1} />
@@ -34,8 +34,8 @@ const Hero = () => {
         </div>
 
         {/* Right Side Profile Picture with Glare (only on desktop) */}
-        <div className="hidden lg:block mb-6 lg:mb-0 flex-shrink-0">
-          <GlareCard className="flex flex-col items-center justify-center">
+        <div className="hidden md:block mb-6 lg:mb-0 flex-shrink-0">
+          <GlareCard className="flex items-center justify-center">
             <img
               src="/assets/profile-picture.png"
               alt="Profile Picture"
@@ -45,17 +45,17 @@ const Hero = () => {
         </div>
 
         {/* Profile Picture (only on mobile) */}
-        <div className="lg:hidden mb-6 lg:mb-0 flex-shrink-0">
+        <div className="md:hidden mb-6 flex-shrink-0">
           <img
             src="/assets/profile-picture.png"
             alt="Profile Picture"
-            className="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-full shadow-lg"
+            className="w-32 h-32 object-cover rounded-full shadow-lg"
           />
         </div>
       </div>
 
       {/* Cool Mode Button */}
-      <div className="flex flex-col items-start lg:pt-4">
+      <div className="mt-8 lg:mt-4 flex justify-center lg:justify-start w-full">
           <EncryptButton />
       </div>
     </div>
