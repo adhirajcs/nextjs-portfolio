@@ -20,7 +20,7 @@ const NavBar = () => {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#hero",
+      href: "/",
     },
     {
       title: "About",
