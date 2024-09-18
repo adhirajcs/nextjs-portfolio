@@ -58,7 +58,7 @@ const About = () => {
 
         {/* Right Side - Introduction Text */}
         <div className="text-center lg:text-left lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6 lg:pl-10">
-          <TextGenerateEffect words={introText} filter={false} />
+          <TextGenerateEffect words={introText} filter={false} textSize="text-sm md:text-base" />
         </div>
       </div>
     </div>
