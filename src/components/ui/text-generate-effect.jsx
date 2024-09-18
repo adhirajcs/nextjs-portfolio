@@ -9,22 +9,27 @@ export const TextGenerateEffect = ({
   filter = true,
   duration = 0.5,
   textSize = "text-sm md:text-lg", // Default size
+  isHovered = false, // New prop to control hover animation
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+
   useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-        filter: filter ? "blur(0px)" : "none",
-      },
-      {
-        duration: duration ? duration : 1,
-        delay: stagger(0.2),
-      }
-    );
-  }, [scope.current]);
+    if (isHovered) {
+      // Only animate when hovered
+      animate(
+        "span",
+        {
+          opacity: 1,
+          filter: filter ? "blur(0px)" : "none",
+        },
+        {
+          duration: duration ? duration : 1,
+          delay: stagger(0.2),
+        }
+      );
+    }
+  }, [scope.current, isHovered]); // Depend on isHovered
 
   const renderWords = () => {
     return (
