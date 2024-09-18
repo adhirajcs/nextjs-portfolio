@@ -55,13 +55,13 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
         {/* Left Side - Icon Cloud */}
         <div className="flex-shrink-0 mb-6 lg:mb-0 flex items-center justify-center">
-          <div className="h-48 w-48 sm:h-60 sm:w-60 lg:h-72 lg:w-72">
+          <div className="h-48 w-48 sm:h-60 sm:w-60 lg:h-80 lg:w-80">
             <IconCloud iconSlugs={slugs} />
           </div>
         </div>
 
-        {/* Right Side - Introduction Text */}
-        <div className="text-center lg:text-left lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6 lg:pl-10">
+        {/* Right Side - Introduction Text and Skills */}
+        <div className="text-center lg:text-left lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6 lg:pl-32">
           {/* For Desktop View */}
           <div className="hidden md:block">
             <TextGenerateEffect
@@ -79,6 +79,23 @@ const About = () => {
               textSize="text-sm"
               isHovered={true} // Always animate in mobile view
             />
+          </div>
+
+          {/* Skills Section */}
+          <div className="mt-8">
+            <h2 className="text-lg font-semibold text-center pb-4">My Skills</h2>
+            <div className="flex flex-wrap gap-4 mt-2 items-center text-center justify-center">
+              {/* Placeholder for now */}
+              <span className="bg-slate-500 text-white px-4 py-2 rounded-lg">
+                Placeholder
+              </span>
+              <span className="bg-slate-500 text-white px-4 py-2 rounded-lg">
+                Placeholder
+              </span>
+              <span className="bg-slate-500 text-white px-4 py-2 rounded-lg">
+                Placeholder
+              </span>
+            </div>
           </div>
         </div>
       </div>
