@@ -43,7 +43,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-10 flex flex-col items-center"
+      className="relative z-10 text-white px-8 lg:px-28 py-10 lg:pt-10 flex flex-col items-center"
     >
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center pb-8">About Me</h1>
@@ -57,7 +57,7 @@ const About = () => {
         </div>
 
         {/* Right Side - Introduction Text */}
-        <div className="text-center lg:text-left lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6">
+        <div className="text-center lg:text-left lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6 lg:pl-10">
           <TextGenerateEffect words={introText} filter={false} />
         </div>
       </div>
