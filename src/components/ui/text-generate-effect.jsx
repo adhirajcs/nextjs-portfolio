@@ -1,6 +1,6 @@
 "use client";
-import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
@@ -8,15 +8,17 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.5,
-  textSize = "text-sm md:text-lg", // Default size
-  isHovered = false, // New prop to control hover animation
+  textSize = "text-sm md:text-lg",
 }) => {
   const [scope, animate] = useAnimate();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true }); // Monitor when the component is in view
+
   let wordsArray = words.split(" ");
 
   useEffect(() => {
-    if (isHovered) {
-      // Only animate when hovered
+    if (isInView) {
+      // Animate only when in view
       animate(
         "span",
         {
@@ -24,12 +26,18 @@ export const TextGenerateEffect = ({
           filter: filter ? "blur(0px)" : "none",
         },
         {
-          duration: duration ? duration : 1,
+          duration: duration,
           delay: stagger(0.2),
         }
       );
+    } else {
+      // Reset the animation when out of view
+      animate("span", {
+        opacity: 0,
+        filter: filter ? "blur(10px)" : "none",
+      });
     }
-  }, [scope.current, isHovered]); // Depend on isHovered
+  }, [isInView, scope.current]); // Depend on isInView
 
   const renderWords = () => {
     return (
@@ -52,7 +60,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("", className)}>
+    <div className={cn("", className)} ref={ref}>
       <div className="mt-4">
         <div
           className={`dark:text-white text-black leading-snug tracking-wide ${textSize}`}

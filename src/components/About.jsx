@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import IconCloud from "@/components/magicui/icon-cloud";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
@@ -19,8 +18,6 @@ import {
 } from "react-icons/si";
 
 const About = () => {
-  const [isHovered, setIsHovered] = useState(false); // State for hover
-
   const slugs = [
     "typescript",
     "javascript",
@@ -76,7 +73,7 @@ const About = () => {
     {
       id: 4,
       name: "Django",
-      icon: <SiDjango size={40} className="text-[#092e20]" />,
+      icon: <SiDjango size={40} className="text-[#163f2f]" />,
     },
     {
       id: 5,
@@ -101,7 +98,7 @@ const About = () => {
     {
       id: 9,
       name: "GitHub",
-      icon: <SiGithub size={40} className="text-[#181717]" />,
+      icon: <SiGithub size={40} className="text-[#ffffff]" />,
     },
     {
       id: 10,
@@ -114,7 +111,6 @@ const About = () => {
     <div
       id="about"
       className="relative z-10 text-white px-8 lg:px-28 py-10 lg:pt-16 flex flex-col items-center"
-      onMouseEnter={() => setIsHovered(true)} // Trigger animation on hover
     >
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center pb-8">About Me</h1>
@@ -129,24 +125,12 @@ const About = () => {
 
         {/* Right Side - Introduction Text and Skills */}
         <div className="text-center lg:text-justify lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6 lg:pl-24">
-          {/* For Desktop View */}
-          <div className="hidden lg:block">
-            <TextGenerateEffect
-              words={introText}
-              filter={false}
-              textSize="text-sm md:text-base"
-              isHovered={isHovered}
-            />
-          </div>
-          {/* For Mobile View */}
-          <div className="block lg:hidden">
-            <TextGenerateEffect
-              words={introText}
-              filter={false}
-              textSize="text-sm"
-              isHovered={true} // Always animate in mobile view
-            />
-          </div>
+          {/* TextGenerateEffect */}
+          <TextGenerateEffect
+            words={introText}
+            filter={false}
+            textSize="text-sm md:text-base"
+          />
 
           {/* Skills Section */}
           <div className="mt-12">
