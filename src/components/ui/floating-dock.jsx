@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export const FloatingDock = ({
   items,
@@ -21,13 +21,31 @@ export const FloatingDock = ({
   </>);
 };
 
-const FloatingDockMobile = ({
-  items,
-  className
-}) => {
+const FloatingDockMobile = ({ items, className }) => {
   const [open, setOpen] = useState(false);
+  const navRef = useRef(null); // Ref for the navbar container
+
+  // Effect to handle clicks outside the navbar
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpen(false); // Close the navbar if clicked outside
+      }
+    };
+
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
+
   return (
-    (<div className={cn("relative block md:hidden", className)}>
+    <div className={cn("relative block md:hidden", className)} ref={navRef}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -51,6 +69,7 @@ const FloatingDockMobile = ({
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}>
                 <Link
                   href={item.href}
+                  target={item.target || "_self"}
                   key={item.title}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-slate-900 flex items-center justify-center">
                   <div className="h-4 w-4">{item.icon}</div>
@@ -65,7 +84,7 @@ const FloatingDockMobile = ({
         className="h-10 w-10 rounded-full bg-gray-50 dark:bg-slate-900 flex items-center justify-center">
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
-    </div>)
+    </div>
   );
 };
 
