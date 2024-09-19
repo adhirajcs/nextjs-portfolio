@@ -130,7 +130,7 @@ const About = () => {
         {/* Right Side - Introduction Text and Skills */}
         <div className="text-center lg:text-justify lg:w-2/3 mt-4 lg:mt-0 p-4 lg:p-6 lg:pl-24">
           {/* For Desktop View */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <TextGenerateEffect
               words={introText}
               filter={false}
@@ -139,7 +139,7 @@ const About = () => {
             />
           </div>
           {/* For Mobile View */}
-          <div className="block md:hidden">
+          <div className="block lg:hidden">
             <TextGenerateEffect
               words={introText}
               filter={false}
