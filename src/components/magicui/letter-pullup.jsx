@@ -1,21 +1,19 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
-export default function LetterPullup({
-  className,
-  words,
-  delay,
-  isHovered
-}) {
+export default function LetterPullup({ className, words, delay }) {
   const letters = words.split("");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false }); // Trigger animation both ways (entering and leaving)
 
   const pullupVariant = {
     initial: { y: 100, opacity: 0 },
     animate: (i) => ({
-      y: 0,
-      opacity: isHovered ? 1 : 0, // Show animation on hover
+      y: isInView ? 0 : 100, // Return to initial position when out of view
+      opacity: isInView ? 1 : 0, // Hide letters when out of view
       transition: {
         delay: i * (delay ? delay : 0.05),
       },
@@ -24,7 +22,7 @@ export default function LetterPullup({
 
   return (
     <div className="flex justify-center">
-      <div className={cn("text-center text-4xl font-bold", className)}>
+      <div ref={ref} className={cn("text-center text-4xl font-bold", className)}>
         {letters.map((letter, i) => (
           <motion.span
             key={i}

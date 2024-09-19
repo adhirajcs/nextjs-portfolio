@@ -1,18 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import LetterPullup from "@/components/magicui/letter-pullup";
 import ContactForm from "@/components/contact-form";
 
 const Contact = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div
       id="contact"
       className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-8 flex flex-col items-center pb-24"
-      onMouseEnter={() => setIsHovered(true)} // Trigger animation on hover
-      onMouseLeave={() => setIsHovered(false)} // Reset when not hovering
     >
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center mb-10">Contact Me</h1>
@@ -33,7 +28,6 @@ const Contact = () => {
             words={`Thank You
 for visiting ;)`}
             delay={0.05}
-            isHovered={isHovered} // Pass hover state as prop
           />
         </div>
       </div>
