@@ -22,7 +22,7 @@ export default function LetterPullup({ className, words, delay }) {
 
   return (
     <div className="flex justify-center">
-      <div ref={ref} className={cn("text-center text-4xl font-bold", className)}>
+      <div ref={ref} className={cn("text-center text-5xl font-bold", className)}>
         {letters.map((letter, i) => (
           <motion.span
             key={i}

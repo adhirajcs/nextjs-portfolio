@@ -2,6 +2,13 @@
 
 import LetterPullup from "@/components/magicui/letter-pullup";
 import ContactForm from "@/components/contact-form";
+import { Dancing_Script } from "next/font/google";
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 
 const Contact = () => {
   return (
@@ -26,8 +33,9 @@ const Contact = () => {
         <div className="w-auto pt-6 lg:pt-0 lg:pl-4 lg:w-1/2 flex justify-center">
           <LetterPullup
             words={`Thank You
-for visiting ;)`}
+for visiting.`}
             delay={0.05}
+            className={`${ dancingScript.className }`}
           />
         </div>
       </div>
