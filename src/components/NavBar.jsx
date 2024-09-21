@@ -11,7 +11,13 @@ import {
   IconMoodSmile,
   IconDeviceDesktop,
 } from "@tabler/icons-react";
-import Image from "next/image";
+import { Playpen_Sans, Comfortaa } from "next/font/google";
+
+// Import the fonts using next/font/google
+const body = Comfortaa({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const NavBar = () => {
   const links = [
@@ -80,7 +86,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="fixed bottom-0 right-4 md:left-0 md:right-0 flex items-center justify-center h-[5rem] z-50">
+    <div className={`${body.className} fixed bottom-0 right-4 md:left-0 md:right-0 flex items-center justify-center h-[5rem] z-50`}>
       <FloatingDock items={links} />
     </div>
   );

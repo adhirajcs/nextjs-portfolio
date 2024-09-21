@@ -4,6 +4,19 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { GlareCard } from "@/components/ui/glare-card";
 import { EncryptButton } from "@/components/ui/EncryptButton";
+import { Playpen_Sans, Comfortaa } from "next/font/google";
+
+// Import the fonts using next/font/google
+
+const words1Font = Playpen_Sans({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const words2Font = Comfortaa({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Hero = () => {
   const words1 = [
@@ -29,8 +42,15 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
         {/* Left Side Content */}
         <div className="text-right lg:text-left space-y-4 pb-8 lg:pb-0">
-          <TypewriterEffectSmooth words={words1}/>
-          <TextGenerateEffect words={words2} className="w-11/12 lg:w-2/3" isHovered={true} />
+          <TypewriterEffectSmooth
+            words={words1}
+            className={`${words1Font.className}`}
+          />
+          <TextGenerateEffect
+            words={words2}
+            className={`${words2Font.className} w-11/12 lg:w-2/3`}
+            isHovered={true}
+          />
         </div>
 
         {/* Right Side Profile Picture with Glare (only on desktop) */}
@@ -56,7 +76,7 @@ const Hero = () => {
 
       {/* Cool Mode Button */}
       <div className="mt-8 lg:mt-4 flex justify-center lg:justify-start w-full">
-          <EncryptButton />
+        <EncryptButton />
       </div>
     </div>
   );

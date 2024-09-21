@@ -3,6 +3,7 @@
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import IconCloud from "@/components/magicui/icon-cloud";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { Playpen_Sans, Comfortaa } from "next/font/google";
 
 import {
   SiNextdotjs,
@@ -16,6 +17,16 @@ import {
   SiGithub,
   SiLinux,
 } from "react-icons/si";
+
+// Import the fonts using next/font/google
+const intro = Comfortaa({
+  subsets: ["latin"],
+  weight: "400",
+});
+const heading = Playpen_Sans({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const About = () => {
   const slugs = [
@@ -110,10 +121,14 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-10 text-white px-8 lg:px-28 py-10 lg:pt-16 flex flex-col items-center"
+      className="relative z-10 text-white px-8 lg:px-28 py-10 lg:pt-12 flex flex-col items-center"
     >
       {/* Heading */}
-      <h1 className="text-4xl font-bold text-center pb-8">About Me</h1>
+      <h1
+        className={`${heading.className} text-4xl font-bold text-center pb-6`}
+      >
+        About Me
+      </h1>
 
       <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
         {/* Left Side - Icon Cloud */}
@@ -130,14 +145,15 @@ const About = () => {
             words={introText}
             filter={false}
             textSize="text-sm md:text-base"
+            className={`${intro.className}`}
           />
 
           {/* Skills Section */}
           <div className="mt-12">
-            <h2 className="text-lg font-semibold text-center pb-4">
+            <h2 className={`${heading.className} text-lg font-semibold text-center pb-4`}>
               My Skills
             </h2>
-            <div className="flex flex-wrap gap-x-10 gap-y-4 mt-2 items-center text-center justify-center w-full">
+            <div className={`${intro.className} flex flex-wrap gap-x-10 gap-y-4 mt-2 items-center text-center justify-center w-full`}>
               <AnimatedTooltip items={skills} />
             </div>
           </div>
