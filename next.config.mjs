@@ -1,9 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "api.microlink.io", // Microlink Image Preview
-      "images.unsplash.com", // Unsplash
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.microlink.io", // Microlink Image Preview
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com", // Unsplash
+      },
+      {
+        protocol: "https",
+        hostname: "assets.aceternity.com", // Aceternity
+      },      
     ],
   },
 };
