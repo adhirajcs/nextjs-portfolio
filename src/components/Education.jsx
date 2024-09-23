@@ -108,9 +108,6 @@ const Education = () => {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-4">
             Humanities (10+2)
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
-            Percentage: 55.50%
-          </p>
           <div className="grid grid-cols-2 gap-4">
             <Link href="https://www.akgms.edu.in/" target="_blank">
               <Image
