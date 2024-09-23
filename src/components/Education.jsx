@@ -146,7 +146,7 @@ const Education = () => {
       </h1>
 
       <div className="w-full">
-        <Timeline data={data} />
+        <Timeline data={data} className={`${body.className}`} />
       </div>
     </div>
   );
