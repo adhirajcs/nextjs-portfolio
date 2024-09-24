@@ -22,18 +22,18 @@ const Education = () => {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-3xl font-normal mb-2">
-            Heritage Institute of Technology, Kolkata
+            Heritage Institute of Technology, Kolkata (HITK)
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
             MAKAUT
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-2">
             Master of Computer Applications (MCA)
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
             DGPA: 8.04/10
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <Link href="https://www.heritageit.edu.in/" target="_blank">
               <Image
                 src="/Institutes/HTIK.png"
@@ -52,7 +52,7 @@ const Education = () => {
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -66,13 +66,13 @@ const Education = () => {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
             MAKAUT
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-2">
             Bachelor of Computer Application (BCA)
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
             CGPA: 9.46
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <Link href="https://pitmkol.org/" target="_blank">
               <Image
                 src="/Institutes/pitm.png"
@@ -91,7 +91,7 @@ const Education = () => {
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -108,7 +108,7 @@ const Education = () => {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-4">
             Humanities (10+2)
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <Link href="https://www.akgms.edu.in/" target="_blank">
               <Image
                 src="/Institutes/akgms.png"
@@ -127,7 +127,7 @@ const Education = () => {
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
               />
             </Link>
-          </div>
+          </div> */}
         </div>
       ),
     },
