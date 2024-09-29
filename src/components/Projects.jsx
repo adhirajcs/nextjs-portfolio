@@ -4,51 +4,7 @@ import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import { Playpen_Sans, Comfortaa } from "next/font/google";
-import projectslist from "@/data/projects";
-
-import { DiMysql } from "react-icons/di";
-import {
-  SiNextdotjs,
-  SiReact,
-  SiTailwindcss,
-  SiFirebase,
-  SiFramer,
-  SiRedux,
-  SiMongodb,
-  SiDjango,
-  SiBootstrap,
-  SiAngular,
-  SiNodedotjs,
-  SiExpress,
-  SiSqlite,
-  SiPhp,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiPython,
-} from "react-icons/si";
-
-const toolIcons = {
-  "Next.js": <SiNextdotjs />,
-  React: <SiReact />,
-  TailwindCSS: <SiTailwindcss />,
-  Firebase: <SiFirebase />,
-  "Framer Motion": <SiFramer />,
-  Redux: <SiRedux />,
-  MongoDB: <SiMongodb />,
-  Express: <SiExpress />,
-  "Node.js": <SiNodedotjs />,
-  SQLite: <SiSqlite />,
-  PHP: <SiPhp />,
-  HTML: <SiHtml5 />,
-  CSS: <SiCss3 />,
-  JavaScript: <SiJavascript />,
-  Bootstrap: <SiBootstrap />,
-  Django: <SiDjango />,
-  Angular: <SiAngular />,
-  MySQL: <DiMysql />,
-  Python: <SiPython />,
-};
+import { projectslist, toolIcons } from "@/data/projects-data";
 
 // Import the fonts using next/font/google
 const body = Comfortaa({

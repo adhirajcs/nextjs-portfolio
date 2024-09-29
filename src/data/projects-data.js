@@ -1,3 +1,47 @@
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiFirebase,
+  SiFramer,
+  SiRedux,
+  SiMongodb,
+  SiDjango,
+  SiBootstrap,
+  SiAngular,
+  SiNodedotjs,
+  SiExpress,
+  SiSqlite,
+  SiPhp,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiPython,
+} from "react-icons/si";
+import { DiMysql } from "react-icons/di";
+
+const toolIcons = {
+  "Next.js": <SiNextdotjs />,
+  React: <SiReact />,
+  TailwindCSS: <SiTailwindcss />,
+  Firebase: <SiFirebase />,
+  "Framer Motion": <SiFramer />,
+  Redux: <SiRedux />,
+  MongoDB: <SiMongodb />,
+  Express: <SiExpress />,
+  "Node.js": <SiNodedotjs />,
+  SQLite: <SiSqlite />,
+  PHP: <SiPhp />,
+  HTML: <SiHtml5 />,
+  CSS: <SiCss3 />,
+  JavaScript: <SiJavascript />,
+  Bootstrap: <SiBootstrap />,
+  Django: <SiDjango />,
+  Angular: <SiAngular />,
+  MySQL: <DiMysql />,
+  Python: <SiPython />,
+};
+
 const projectslist = [
   {
     id: 1,
@@ -12,7 +56,7 @@ const projectslist = [
   {
     id: 2,
     name: "Bhabna",
-    description: "thought-sharing platform.",
+    description: "A thought-sharing platform.",
     image:
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFwcHxlbnwwfHx8fDE2ODI1MTg1Nzc&ixlib=rb-4.0.3&q=80&w=400",
     tools: ["Next.js", "TailwindCSS", "MongoDB"],
@@ -98,5 +142,4 @@ const projectslist = [
   },
 ];
 
-
-export default projectslist;
+export { projectslist, toolIcons };
