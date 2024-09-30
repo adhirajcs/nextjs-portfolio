@@ -56,7 +56,7 @@ const projectslist = [
   {
     id: 2,
     name: "Bhabna",
-    description: "A thought-sharing platform.",
+    description: "A platform where people can share their thoughts or be creative.",
     image:
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFwcHxlbnwwfHx8fDE2ODI1MTg1Nzc&ixlib=rb-4.0.3&q=80&w=400",
     tools: ["Next.js", "TailwindCSS", "MongoDB"],
@@ -65,6 +65,16 @@ const projectslist = [
   },
   {
     id: 3,
+    name: "Tic Tac Toe",
+    description: "A simple Tic Tac Toe game using React.",
+    image:
+      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+    tools: ["React", "TailwindCSS"],
+    githubLink: "https://github.com/adhirajcs/tic-tac-toe",
+    liveLink: "https://tic-tac-toe-gamma-sooty.vercel.app",
+  },
+  {
+    id: 4,
     name: "MovieHub",
     description: "A movie information website.",
     image:
@@ -74,9 +84,9 @@ const projectslist = [
     liveLink: "https://movie-hub-wine-three.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "Helpify",
-    description: "A platform for helping people in need.",
+    description: "A location-based community service platform.",
     image:
       "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
     tools: [
@@ -91,7 +101,7 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 5,
+    id: 6,
     name: "Django To Do",
     description: "A simple To-Do application using Django.",
     image:
@@ -101,7 +111,7 @@ const projectslist = [
     liveLink: "https://adhiraj.pythonanywhere.com",
   },
   {
-    id: 6,
+    id: 7,
     name: "HappyHolidayHome",
     description: "A holiday home booking system.",
     image:
@@ -111,19 +121,9 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 7,
-    name: "Tic Tac Toe",
-    description: "A simple Tic Tac Toe game using React.",
-    image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
-    tools: ["React", "TailwindCSS"],
-    githubLink: "https://github.com/adhirajcs/tic-tac-toe",
-    liveLink: "https://tic-tac-toe-gamma-sooty.vercel.app",
-  },
-  {
     id: 8,
     name: "WoofBot",
-    description: "A Discord bot that fetches random dog images.",
+    description: "A Discord bot that provides various commands to enhance your Discord server experience.",
     image:
       "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
     tools: ["Python"],
@@ -133,7 +133,7 @@ const projectslist = [
   {
     id: 9,
     name: "E-commerce Single-Vendor Website",
-    description: "A single-vendor e-commerce website built using Angular.",
+    description: "A single-vendor e-commerce website.",
     image:
       "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
     tools: ["Angular", "Bootstrap", "PHP", "MySQL"],
