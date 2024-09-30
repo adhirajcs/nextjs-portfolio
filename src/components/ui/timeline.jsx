@@ -54,9 +54,9 @@ export const Timeline = ({ data, className }) => {
             </div>
 
             <div className={cn("relative pl-20 pr-4 md:pl-4 w-full")}>
-              <h3 className={cn("md:hidden block text-base mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500")}>
+              <div className={cn("md:hidden block text-base mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500")}>
                 {item.title}
-              </h3>
+              </div>
               {item.content}
             </div>
           </div>
