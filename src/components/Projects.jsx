@@ -33,7 +33,7 @@ const Projects = () => {
         className={`${body.className} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4`}
       >
         {projectslist.map((project) => (
-          <CardContainer key={project.id} className="inter-var cursor-pointer">
+          <CardContainer key={project.id} className="inter-var cursor-pointer w-80">
             <CardBody className="bg-white relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
               <CardItem
                 translateZ="50"
