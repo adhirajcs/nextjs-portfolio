@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 import { Timeline } from "@/components/ui/timeline";
 import data from "@/data/education-data";
 
