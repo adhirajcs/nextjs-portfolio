@@ -1,21 +1,27 @@
 const data = [
-    {
-      title: "2022-2024",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-2xl font-normal mb-2">
-            Heritage Institute of Technology, Kolkata (HITK)
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
-            MAKAUT
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-2">
-            Master of Computer Applications (MCA)
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
-            DGPA: 8.04/10
-          </p>
-          {/* <div className="grid grid-cols-2 gap-4">
+  {
+    title: "2022-2024",
+    content: (
+      <div>
+        {/* Institute's Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-3xl font-normal mb-2">
+          Heritage Institute of Technology, Kolkata (HITK)
+        </p>
+        {/* Uni/Board Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-base font-normal mb-4">
+          MAKAUT
+        </p>
+        {/* Course Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-2">
+          Master of Computer Applications (MCA)
+        </p>
+        {/* Marks */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
+          DGPA: 8.04/10
+        </p>
+        <br />
+        {/* 
+        <div className="grid grid-cols-2 gap-4">
             <Link href="https://www.heritageit.edu.in/" target="_blank">
               <Image
                 src="/Institutes/HTIK.png"
@@ -34,27 +40,34 @@ const data = [
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
               />
             </Link>
-          </div> */}
-        </div>
-      ),
-    },
-    {
-      title: "2019-2022",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-2xl font-normal mb-2">
-            Prajnanananda Institute of Technology and Management (PITM)
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
-            MAKAUT
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-2">
-            Bachelor of Computer Application (BCA)
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
-            CGPA: 9.46
-          </p>
-          {/* <div className="grid grid-cols-2 gap-4">
+          </div>
+        */}
+      </div>
+    ),
+  },
+  {
+    title: "2019-2022",
+    content: (
+      <div>
+        {/* Institute's Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-3xl font-normal mb-2">
+          Prajnanananda Institute of Technology and Management (PITM)
+        </p>
+        {/* Uni/Board Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-base font-normal mb-4">
+          MAKAUT
+        </p>
+        {/* Course Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-2">
+          Bachelor of Computer Application (BCA)
+        </p>
+        {/* Marks */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
+          CGPA: 9.46
+        </p>
+        <br />
+        {/* 
+        <div className="grid grid-cols-2 gap-4">
             <Link href="https://pitmkol.org/" target="_blank">
               <Image
                 src="/Institutes/pitm.png"
@@ -73,25 +86,31 @@ const data = [
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
               />
             </Link>
-          </div> */}
-        </div>
-      ),
-    },
-    {
-      title: "2019",
-      content: (
-        <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-2xl font-normal mb-2">
-            A.K. Ghosh Memorial High School, India
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
-            West Bengal Council of Higher Secondary Education
-          </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-4">
-            Humanities (10+2)
-          </p>
-          {/* <div className="grid grid-cols-2 gap-4">
-            <Link href="https://www.akgms.edu.in/" target="_blank">
+          </div>
+        */}
+      </div>
+    ),
+  },
+  {
+    title: "2019",
+    content: (
+      <div>
+        {/* Institute's Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-3xl font-normal mb-2">
+          A.K. Ghosh Memorial High School, India
+        </p>
+        {/* Uni/Board Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-base font-normal mb-4">
+          West Bengal Council of Higher Secondary Education
+        </p>
+        {/* Course Name */}
+        <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-4">
+          Humanities (10+2)
+        </p>
+        <br />
+        {/* 
+        <div className="grid grid-cols-2 gap-4">
+        <Link href="https://www.akgms.edu.in/" target="_blank">
               <Image
                 src="/Institutes/akgms.png"
                 alt="A.K. Ghosh Memorial High School"
@@ -109,11 +128,11 @@ const data = [
                 className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
               />
             </Link>
-          </div> */}
-        </div>
-      ),
-    },
-  ];
-
+          </div>
+        */}
+      </div>
+    ),
+  },
+];
 
 export default data;

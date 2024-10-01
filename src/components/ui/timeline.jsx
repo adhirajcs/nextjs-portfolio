@@ -2,7 +2,7 @@
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";  // Import cn function
+import { cn } from "@/lib/utils"; // Import cn function
 
 export const Timeline = ({ data, className }) => {
   const ref = useRef(null);
@@ -27,7 +27,7 @@ export const Timeline = ({ data, className }) => {
   return (
     <div
       className={cn(
-        "w-full bg-white/50 dark:bg-slate-900/50 font-sans md:px-10 rounded-2xl overflow-visible",
+        "w-full bg-white/50 dark:bg-slate-900/50 font-sans md:px-10 pt-10 rounded-2xl overflow-visible",
         className
       )}
       ref={containerRef}
@@ -43,18 +43,41 @@ export const Timeline = ({ data, className }) => {
 
       <div ref={ref} className={cn("relative max-w-7xl mx-auto pb-20")}>
         {data.map((item, index) => (
-          <div key={index} className={cn("flex justify-start pt-10 md:pt-10 md:gap-10")}>
-            <div className={cn("sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full")}>
-              <div className={cn("h-8 w-8 md:h-10 md:w-10 absolute left-4 md:left-3 rounded-full bg-white dark:bg-gray-950 flex items-center justify-center")}>
-                <div className={cn("h-3 w-3 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-1 md:p-2")} />
+          <div
+            key={index}
+            className={cn("flex justify-start pt-10 md:pt-10 md:gap-10")}
+          >
+            <div
+              className={cn(
+                "sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full"
+              )}
+            >
+              <div
+                className={cn(
+                  "h-8 w-8 md:h-10 md:w-10 absolute left-4 md:left-3 rounded-full bg-white dark:bg-gray-950 flex items-center justify-center"
+                )}
+              >
+                <div
+                  className={cn(
+                    "h-3 w-3 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-1 md:p-2"
+                  )}
+                />
               </div>
-              <h3 className={cn("hidden md:block text-xl md:pl-20 md:text-3xl font-bold text-neutral-500 dark:text-neutral-500")}>
+              <h3
+                className={cn(
+                  "hidden md:block text-xl md:pl-20 md:text-3xl font-bold text-neutral-500 dark:text-neutral-500"
+                )}
+              >
                 {item.title}
               </h3>
             </div>
 
             <div className={cn("relative pl-20 pr-4 md:pl-4 w-full")}>
-              <div className={cn("md:hidden block text-base mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500")}>
+              <div
+                className={cn(
+                  "md:hidden block text-base mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500"
+                )}
+              >
                 {item.title}
               </div>
               {item.content}
@@ -74,7 +97,9 @@ export const Timeline = ({ data, className }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className={cn("absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full")}
+            className={cn(
+              "absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            )}
           />
         </div>
       </div>
