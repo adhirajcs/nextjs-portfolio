@@ -48,7 +48,7 @@ const projectslist = [
     name: "Next.js Portfolio",
     description: "A sleek portfolio showcasing my skills and projects.",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFwcHxlbnwwfHx8fDE2ODI1MTg1Nzc&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/Portfolio.png",
     tools: ["Next.js", "TailwindCSS", "Framer Motion"],
     githubLink: "https://github.com/adhirajcs/nextjs-portfolio",
     liveLink: "https://adhiraj-saha-portfolio.vercel.app",
@@ -58,7 +58,7 @@ const projectslist = [
     name: "Bhabna",
     description: "A platform where people can share their thoughts or be creative.",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGFwcHxlbnwwfHx8fDE2ODI1MTg1Nzc&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/Bhabna.png",
     tools: ["Next.js", "TailwindCSS", "MongoDB"],
     githubLink: "https://github.com/adhirajcs/bhabna",
     liveLink: "https://bhabna-adhirajcs-projects.vercel.app",
@@ -68,7 +68,7 @@ const projectslist = [
     name: "Tic Tac Toe",
     description: "A simple Tic Tac Toe game using React.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/tic-tac-toe.png",
     tools: ["React", "TailwindCSS"],
     githubLink: "https://github.com/adhirajcs/tic-tac-toe",
     liveLink: "https://tic-tac-toe-gamma-sooty.vercel.app",
@@ -78,7 +78,7 @@ const projectslist = [
     name: "MovieHub",
     description: "A movie information website.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/MovieHub.png",
     tools: ["React", "TailwindCSS"],
     githubLink: "https://github.com/adhirajcs/MovieHub",
     liveLink: "https://movie-hub-wine-three.vercel.app",
@@ -88,7 +88,7 @@ const projectslist = [
     name: "Helpify",
     description: "A location-based community service platform.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/helpify.png",
     tools: [
       "React",
       "TailwindCSS",
@@ -105,7 +105,7 @@ const projectslist = [
     name: "Django To Do",
     description: "A simple To-Do application using Django.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/todo.png",
     tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "Django", "SQLite"],
     githubLink: "https://github.com/adhirajcs/django-to-do",
     liveLink: "https://adhiraj.pythonanywhere.com",
@@ -115,7 +115,7 @@ const projectslist = [
     name: "HappyHolidayHome",
     description: "A holiday home booking system.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/HappyHolidayHome.png",
     tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     githubLink: "https://github.com/adhirajcs/HappyHolidayHome",
     liveLink: null, // No live link for this one
@@ -125,7 +125,7 @@ const projectslist = [
     name: "WoofBot",
     description: "A Discord bot that provides various commands to enhance your Discord server experience.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/WoofBot.png",
     tools: ["Python"],
     githubLink: "https://github.com/adhirajcs/WoofBot",
     liveLink: null, // No live link for this one
@@ -135,7 +135,7 @@ const projectslist = [
     name: "E-commerce Single-Vendor Website",
     description: "A single-vendor e-commerce website.",
     image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGVjb21tZXJjZXxlbnwwfHx8fDE2ODI1MTg2NTY&ixlib=rb-4.0.3&q=80&w=400",
+      "/Projects-images/e-commerce.png",
     tools: ["Angular", "Bootstrap", "PHP", "MySQL"],
     githubLink: "https://github.com/adhirajcs/E-commerce-Single-Vendor-Website",
     liveLink: null, // No live link for this one
