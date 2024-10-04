@@ -79,7 +79,7 @@ const Projects = () => {
                     translateZ={20}
                     as={Link}
                     href={project.liveLink}
-                    target="__blank"
+                    target="_blank"
                     className="px-3 py-1 rounded-xl text-sm font-normal dark:text-white"
                   >
                     Live Demo →
@@ -89,7 +89,7 @@ const Projects = () => {
                   translateZ={20}
                   as={Link}
                   href={project.githubLink}
-                  target="__blank"
+                  target="_blank"
                   className="px-3 py-1 rounded-xl bg-black dark:bg-white dark:text-black text-white text-sm font-bold"
                 >
                   GitHub
