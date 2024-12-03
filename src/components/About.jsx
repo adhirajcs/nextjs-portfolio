@@ -82,7 +82,7 @@ const About = () => {
     {
       id: 3,
       name: "Next.js",
-      icon: <SiNextdotjs size={40} className="text-[#0070f3]" />,
+      icon: <SiNextdotjs size={40} className="text-[#dfdfdf]" />,
     },
     {
       id: 4,
