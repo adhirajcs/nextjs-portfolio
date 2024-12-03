@@ -18,7 +18,6 @@ const dancingScript = Dancing_Script({
   weight: "400",
 });
 
-
 const Contact = () => {
   return (
     <div
@@ -26,12 +25,18 @@ const Contact = () => {
       className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-8 flex flex-col items-center pb-24"
     >
       {/* Heading */}
-      <h1 className={`${heading.className} text-4xl font-bold text-center mb-16`}>Contact Me</h1>
+      <h1
+        className={`${heading.className} text-4xl font-bold text-center mb-16`}
+      >
+        Contact Me
+      </h1>
 
       {/* Main content with flex-row layout */}
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-start md:items-center w-full">
         {/* Contact Form on the Left */}
-        <div className={`${body.className} w-full md:w-5/6 lg:w-1/2 pr-0 lg:pr-8 flex justify-center`}>
+        <div
+          className={`${body.className} w-full md:w-5/6 lg:w-1/2 pr-0 lg:pr-8 flex justify-center`}
+        >
           <ContactForm />
         </div>
 
@@ -44,7 +49,7 @@ const Contact = () => {
             words={`Thank You
 for visiting.`}
             delay={0.05}
-            className={`${ dancingScript.className }`}
+            className={`${dancingScript.className}`}
           />
         </div>
       </div>

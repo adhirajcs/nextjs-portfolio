@@ -15,6 +15,7 @@ export default function ContactForm() {
   });
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [copySuccess, setCopySuccess] = useState(false); // State for copy success
 
   // Handle form data change
   const handleChange = (e) => {
@@ -38,10 +39,18 @@ export default function ContactForm() {
       }
     } catch (error) {
       setFeedbackMessage("Error occurred. Please try again.");
-      console.log(error)
+      console.log(error);
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  // Handle copy to clipboard
+  const handleCopy = () => {
+    navigator.clipboard.writeText("adhirajsaha24@gmail.com").then(() => {
+      setCopySuccess(true);
+      setTimeout(() => setCopySuccess(false), 2000); // Reset the success message after 2 seconds
+    });
   };
 
   return (
@@ -66,6 +75,25 @@ export default function ContactForm() {
         Feel free to send me a message regarding any inquiries or collaborations.
       </p> */}
       <form onSubmit={handleSubmit}>
+        {/* To input (non-editable) with copy button */}
+        <LabelInputContainer className="mb-4">
+          <Label htmlFor="to">To</Label>
+          <Input
+            id="to"
+            type="text"
+            value="adhirajsaha24@gmail.com"
+            readOnly
+            className="bg-gray-200 text-gray-600 cursor-default"
+          />
+          {/* <button
+            type="button"
+            onClick={handleCopy}
+            className="text-sm text-blue-500 hover:text-blue-700"
+          >
+            {copySuccess ? "Copied!" : "Copy"}
+          </button> */}
+        </LabelInputContainer>
+
         {/* Name input */}
         <LabelInputContainer className="mb-4">
           <Label htmlFor="name">Name</Label>
