@@ -16,6 +16,9 @@ import {
   SiGit,
   SiGithub,
   SiLinux,
+  SiPostgresql,
+  SiDrizzle,
+  SiExpress,
 } from "react-icons/si";
 
 // Import the fonts using next/font/google
@@ -68,53 +71,68 @@ const About = () => {
   const skills = [
     {
       id: 1,
-      name: "Next.js",
-      icon: <SiNextdotjs size={40} className="text-[#0070f3]" />,
-    },
-    {
-      id: 2,
       name: "React",
       icon: <SiReact size={40} className="text-[#61dafb]" />,
     },
     {
-      id: 3,
-      name: "Python",
-      icon: <SiPython size={40} className="text-[#306998]" />,
-    },
-    {
-      id: 4,
-      name: "Django",
-      icon: <SiDjango size={40} className="text-[#163f2f]" />,
-    },
-    {
-      id: 5,
-      name: "MongoDB",
-      icon: <SiMongodb size={40} className="text-[#47a248]" />,
-    },
-    {
-      id: 6,
-      name: "MySQL",
-      icon: <SiMysql size={40} className="text-[#00758f]" />,
-    },
-    {
-      id: 7,
+      id: 2,
       name: "TailwindCSS",
       icon: <SiTailwindcss size={40} className="text-[#38b2ac]" />,
     },
     {
+      id: 3,
+      name: "Next.js",
+      icon: <SiNextdotjs size={40} className="text-[#0070f3]" />,
+    },
+    {
+      id: 4,
+      name: "Python",
+      icon: <SiPython size={40} className="text-[#306998]" />,
+    },
+    {
+      id: 5,
+      name: "Django",
+      icon: <SiDjango size={40} className="text-[#226149]" />,
+    },
+    {
+      id: 6,
+      name: "Express.js",
+      icon: <SiExpress size={40} className="text-[#ffffff]" />,
+    },
+    {
+      id: 7,
+      name: "Drizzle",
+      icon: <SiDrizzle scale={40} className="text-[#f68d2e]" />,
+    },
+    {
       id: 8,
+      name: "PostgreSQL",
+      icon: <SiPostgresql size={40} className="text-[#458dc9]" />,
+    },
+    {
+      id: 9,
+      name: "MySQL",
+      icon: <SiMysql size={40} className="text-[#00758f]" />,
+    },
+    {
+      id: 10,
+      name: "MongoDB",
+      icon: <SiMongodb size={40} className="text-[#47a248]" />,
+    },
+    {
+      id: 11,
       name: "Git",
       icon: <SiGit size={40} className="text-[#f05032]" />,
     },
     {
-      id: 9,
+      id: 12,
       name: "GitHub",
-      icon: <SiGithub size={40} className="text-[#ffffff]" />,
+      icon: <SiGithub size={40} className="text-[#dfdfdf]" />,
     },
     {
-      id: 10,
+      id: 13,
       name: "Linux",
-      icon: <SiLinux size={40} className="text-[#fcc624]" />,
+      icon: <SiLinux size={40} className="text-[#ca9c10]" />,
     },
   ];
 
@@ -150,10 +168,14 @@ const About = () => {
 
           {/* Skills Section */}
           <div className="mt-12">
-            <h2 className={`${heading.className} text-lg font-semibold text-center pb-4`}>
+            <h2
+              className={`${heading.className} text-lg font-semibold text-center pb-4`}
+            >
               My Skills
             </h2>
-            <div className={`${intro.className} flex flex-wrap gap-x-10 gap-y-4 mt-2 items-center text-center justify-center w-full`}>
+            <div
+              className={`${intro.className} flex flex-wrap gap-x-10 gap-y-4 mt-2 items-center text-center justify-center w-full`}
+            >
               <AnimatedTooltip items={skills} />
             </div>
           </div>
