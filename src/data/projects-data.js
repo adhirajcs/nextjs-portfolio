@@ -17,6 +17,10 @@ import {
   SiCss3,
   SiJavascript,
   SiPython,
+  SiShadcnui,
+  SiPostgresql,
+  SiSupabase
+  
 } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
 
@@ -40,11 +44,23 @@ const toolIcons = {
   Angular: <SiAngular />,
   MySQL: <DiMysql />,
   Python: <SiPython />,
+  ShadCNUI: <SiShadcnui />,
+  PostgreSQL: <SiPostgresql />,
+  Supabase: <SiSupabase />
 };
 
 const projectslist = [
   {
-    id: 1,
+    id: 10,
+    name: "HR System",
+    description: "A Human Resource Management System.",
+    image: "/Projects-images/placeholder.svg",
+    tools: ["Next.js", "React", "TailwindCSS", "ShadCNUI", "Django", "PostgreSQL", "Supabase"],
+    githubLink: "https://github.com/adhirajcs/HR-System",
+    liveLink: null, // No live link for this one
+  },
+  {
+    id: 9,
     name: "Next.js Portfolio",
     description: "A sleek portfolio showcasing my skills and projects.",
     image:
@@ -54,7 +70,7 @@ const projectslist = [
     liveLink: "https://adhiraj-saha-portfolio.vercel.app",
   },
   {
-    id: 2,
+    id: 8,
     name: "Bhabna",
     description: "A platform where people can share their thoughts or be creative.",
     image:
@@ -64,7 +80,7 @@ const projectslist = [
     liveLink: "https://bhabna-adhirajcs-projects.vercel.app",
   },
   {
-    id: 3,
+    id: 7,
     name: "Tic Tac Toe",
     description: "A simple Tic Tac Toe game using React.",
     image:
@@ -74,7 +90,7 @@ const projectslist = [
     liveLink: "https://tic-tac-toe-gamma-sooty.vercel.app",
   },
   {
-    id: 4,
+    id: 6,
     name: "MovieHub",
     description: "A movie information website.",
     image:
@@ -101,9 +117,9 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 6,
+    id: 4,
     name: "Django To Do",
-    description: "A simple To-Do application using Django.",
+    description: "A simple To-Do app using Django.",
     image:
       "/Projects-images/todo.png",
     tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "Django", "SQLite"],
@@ -111,7 +127,7 @@ const projectslist = [
     liveLink: "https://adhiraj.pythonanywhere.com",
   },
   {
-    id: 7,
+    id: 3,
     name: "HappyHolidayHome",
     description: "A holiday home booking system.",
     image:
@@ -121,7 +137,7 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 8,
+    id: 2,
     name: "WoofBot",
     description: "A Discord bot that provides various commands to enhance your Discord server experience.",
     image:
@@ -131,7 +147,7 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 9,
+    id: 1,
     name: "E-commerce Single-Vendor Website",
     description: "A single-vendor e-commerce website.",
     image:
