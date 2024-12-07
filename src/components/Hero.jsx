@@ -6,6 +6,8 @@ import { GlareCard } from "@/components/ui/glare-card";
 import { EncryptButton } from "@/components/ui/EncryptButton";
 import { Playpen_Sans, Comfortaa } from "next/font/google";
 
+import { SiGithub, SiLinkedin } from "react-icons/si";
+
 // Import the fonts using next/font/google
 
 const words1Font = Playpen_Sans({
@@ -32,7 +34,7 @@ const Hero = () => {
     },
   ];
 
-  const words2 = `An Aspiring Software Developer with skills in ReactJS, Next.js, Python, and Django.`;
+  const words2 = `An Aspiring Software Developer with skills in Python, Django, React, Next.js and PostgreSQL.`;
 
   return (
     <div
@@ -74,9 +76,29 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Cool Mode Button */}
-      <div className="mt-8 lg:mt-4 flex justify-center lg:justify-start w-full">
+      <div className="mt-8 lg:mt-4 flex justify-center lg:justify-start w-full space-x-4">
+        {/* Cool Mode Button */}
         <EncryptButton />
+
+        {/* Linkedin Button */}
+        <a
+          href="https://www.linkedin.com/in/adhirajsaha"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-3 bg-[#18559b] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
+        >
+          <SiLinkedin size={20} className="text-[#dfdfdf]" />
+        </a>
+
+        {/* Github Button */}
+        <a
+  href="https://github.com/adhirajcs"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-3 bg-[#000] text-[#696969] rounded-md font-light transition duration-200 ease-linear flex items-center justify-center"
+>
+  <SiGithub size={20} className="text-[#dfdfdf]" />
+</a>
       </div>
     </div>
   );
