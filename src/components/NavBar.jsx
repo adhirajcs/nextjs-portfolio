@@ -10,6 +10,7 @@ import {
   IconSchool,
   IconMoodSmile,
   IconDeviceDesktop,
+  IconBrandGithubFilled,
 } from "@tabler/icons-react";
 import { Playpen_Sans, Comfortaa } from "next/font/google";
 
@@ -71,7 +72,7 @@ const NavBar = () => {
     {
       title: "LinkedIn",
       icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full dark:text-blue-600" />
       ),
       href: "https://www.linkedin.com/in/adhirajsaha",
       target: "_blank",
@@ -79,7 +80,7 @@ const NavBar = () => {
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithubFilled className="h-full w-full dark:text-white" />
       ),
       href: "https://github.com/adhirajcs",
       target: "_blank",
