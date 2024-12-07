@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import PulsatingButton from "@/components/ui/pulsating-button";
 import { Playpen_Sans, Comfortaa } from "next/font/google";
 import { projectslist, toolIcons } from "@/data/projects-data";
 
@@ -99,6 +100,15 @@ const Projects = () => {
           </CardContainer>
         ))}
       </div>
+
+      {/* View More Button */}
+      <a
+        href="https://github.com/adhirajcs?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <PulsatingButton>View More...</PulsatingButton>
+      </a>
     </div>
   );
 };

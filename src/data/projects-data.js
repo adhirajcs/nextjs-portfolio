@@ -51,7 +51,7 @@ const toolIcons = {
 
 const projectslist = [
   {
-    id: 10,
+    id: 7,
     name: "HR System",
     description: "A Human Resource Management System.",
     image: "/Projects-images/placeholder.svg",
@@ -60,7 +60,7 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 9,
+    id: 6,
     name: "Next.js Portfolio",
     description: "A sleek portfolio showcasing my skills and projects.",
     image:
@@ -70,7 +70,7 @@ const projectslist = [
     liveLink: "https://adhiraj-saha-portfolio.vercel.app",
   },
   {
-    id: 8,
+    id: 5,
     name: "Bhabna",
     description: "A platform where people can share their thoughts or be creative.",
     image:
@@ -79,18 +79,9 @@ const projectslist = [
     githubLink: "https://github.com/adhirajcs/bhabna",
     liveLink: "https://bhabna-adhirajcs-projects.vercel.app",
   },
+  
   {
-    id: 7,
-    name: "Tic Tac Toe",
-    description: "A simple Tic Tac Toe game using React.",
-    image:
-      "/Projects-images/tic-tac-toe.png",
-    tools: ["React", "TailwindCSS"],
-    githubLink: "https://github.com/adhirajcs/tic-tac-toe",
-    liveLink: "https://tic-tac-toe-gamma-sooty.vercel.app",
-  },
-  {
-    id: 6,
+    id: 4,
     name: "MovieHub",
     description: "A movie information website.",
     image:
@@ -100,7 +91,7 @@ const projectslist = [
     liveLink: "https://movie-hub-wine-three.vercel.app",
   },
   {
-    id: 5,
+    id: 3,
     name: "Helpify",
     description: "A location-based community service platform.",
     image:
@@ -117,7 +108,7 @@ const projectslist = [
     liveLink: null, // No live link for this one
   },
   {
-    id: 4,
+    id: 2,
     name: "Django To Do",
     description: "A simple To-Do app using Django.",
     image:
@@ -126,18 +117,9 @@ const projectslist = [
     githubLink: "https://github.com/adhirajcs/django-to-do",
     liveLink: "https://adhiraj.pythonanywhere.com",
   },
+  
   {
-    id: 3,
-    name: "HappyHolidayHome",
-    description: "A holiday home booking system.",
-    image:
-      "/Projects-images/HappyHolidayHome.png",
-    tools: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
-    githubLink: "https://github.com/adhirajcs/HappyHolidayHome",
-    liveLink: null, // No live link for this one
-  },
-  {
-    id: 2,
+    id: 1,
     name: "WoofBot",
     description: "A Discord bot that provides various commands to enhance your Discord server experience.",
     image:
@@ -146,16 +128,7 @@ const projectslist = [
     githubLink: "https://github.com/adhirajcs/WoofBot",
     liveLink: null, // No live link for this one
   },
-  {
-    id: 1,
-    name: "E-commerce Single-Vendor Website",
-    description: "A single-vendor e-commerce website.",
-    image:
-      "/Projects-images/e-commerce.png",
-    tools: ["Angular", "Bootstrap", "PHP", "MySQL"],
-    githubLink: "https://github.com/adhirajcs/E-commerce-Single-Vendor-Website",
-    liveLink: null, // No live link for this one
-  },
+  
 ];
 
 export { projectslist, toolIcons };
