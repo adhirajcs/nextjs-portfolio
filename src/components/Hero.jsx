@@ -23,13 +23,13 @@ const words2Font = Comfortaa({
 const Hero = () => {
   const words1 = [
     {
-      text: `"Hello There" `,
+      text: `"Hello There"`,
     },
     {
       text: "",
     },
     {
-      text: `I am Adhiraj Saha.`,
+      text: `I am Adhiraj Saha`,
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
