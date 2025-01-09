@@ -4,7 +4,7 @@ const data = [
     content: (
       <div>
         {/* Institute's Name */}
-        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-3xl font-normal mb-2">
+        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-2xl font-normal mb-2">
           Heritage Institute of Technology, Kolkata (HITK)
         </p>
         {/* Uni/Board Name */}
@@ -50,7 +50,7 @@ const data = [
     content: (
       <div>
         {/* Institute's Name */}
-        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-3xl font-normal mb-2">
+        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-2xl font-normal mb-2">
           Prajnanananda Institute of Technology and Management (PITM)
         </p>
         {/* Uni/Board Name */}
@@ -96,7 +96,7 @@ const data = [
     content: (
       <div>
         {/* Institute's Name */}
-        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-3xl font-normal mb-2">
+        <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-2xl font-normal mb-2">
           A.K. Ghosh Memorial High School, India
         </p>
         {/* Uni/Board Name */}
