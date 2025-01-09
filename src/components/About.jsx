@@ -139,7 +139,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative z-10 text-white px-8 lg:px-28 py-10 lg:pt-12 flex flex-col items-center"
+      className="relative z-10 text-white px-8 lg:px-16 py-10 lg:pt-12 flex flex-col items-center"
     >
       {/* Heading */}
       <h1

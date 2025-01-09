@@ -39,7 +39,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative z-10 text-white px-8 lg:px-40 py-10 lg:pt-36 flex flex-col items-center"
+      className="relative z-10 text-white px-8 lg:px-48 py-10 lg:pt-36 flex flex-col items-center"
     >
       <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
         {/* Left Side Content */}

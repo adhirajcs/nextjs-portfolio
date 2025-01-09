@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-8 flex flex-col items-center pb-24"
+      className="relative z-10 text-white px-8 lg:px-28 py-10 lg:pt-8 flex flex-col items-center pb-24"
     >
       {/* Heading */}
       <h1
