@@ -39,18 +39,18 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative z-10 text-white px-8 lg:px-56 py-10 lg:pt-36 flex flex-col items-center"
+      className="relative z-10 text-white px-8 lg:px-40 py-10 lg:pt-36 flex flex-col items-center"
     >
       <div className="flex flex-col lg:flex-row items-center justify-evenly w-full">
         {/* Left Side Content */}
-        <div className="text-right lg:text-left space-y-4 pb-8 lg:pb-0">
+        <div className="text-left space-y-4 pb-8 lg:pb-0">
           <TypewriterEffectSmooth
             words={words1}
             className={`${words1Font.className}`}
           />
           <TextGenerateEffect
             words={words2}
-            className={`${words2Font.className} w-11/12 lg:w-2/3`}
+            className={`${words2Font.className} text-center lg:text-left lg:w-2/3`}
             isHovered={true}
           />
         </div>
