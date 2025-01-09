@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="relative z-10 text-white px-8 lg:px-40 py-10 lg:pt-12 flex flex-col items-center"
+      className="relative z-10 text-white px-8 lg:px-20 py-10 lg:pt-12 flex flex-col items-center"
     >
       {/* Heading */}
       <h1
@@ -102,13 +102,15 @@ const Projects = () => {
       </div>
 
       {/* View More Button */}
-      <a
-        href="https://github.com/adhirajcs?tab=repositories"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <PulsatingButton>View More...</PulsatingButton>
-      </a>
+      <div className="mt-6">
+        <a
+          href="https://github.com/adhirajcs?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PulsatingButton>View More...</PulsatingButton>
+        </a>
+      </div>
     </div>
   );
 };
