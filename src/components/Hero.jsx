@@ -6,10 +6,11 @@ import { GlareCard } from "@/components/ui/glare-card";
 import { EncryptButton } from "@/components/ui/EncryptButton";
 import { Playpen_Sans, Comfortaa } from "next/font/google";
 
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin,  } from "react-icons/si";
+import { RiTwitterXLine } from "react-icons/ri";
+
 
 // Import the fonts using next/font/google
-
 const words1Font = Playpen_Sans({
   subsets: ["latin"],
   weight: "400",
@@ -50,6 +51,7 @@ const Hero = () => {
           />
           <TextGenerateEffect
             words={words2}
+            filter={false}
             className={`${words2Font.className} text-center lg:text-left lg:w-2/3`}
             isHovered={true}
           />
@@ -79,13 +81,23 @@ const Hero = () => {
       <div className="mt-8 lg:mt-4 flex items-center justify-center lg:justify-start w-full space-x-4">
         {/* Cool Mode Button */}
         <EncryptButton />
+        
+        {/* X/Twitter Button */}
+        <a
+          href="https://x.com/theadhirajsaha"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 shadow-[0_4px_14px_0_rgb(64,64,64,39%)] hover:shadow-[0_6px_20px_rgba(64,64,64,23%)] hover:bg-[rgba(31,41,55,0.95)] bg-[#000] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
+        >
+          <RiTwitterXLine size={20} className="text-[#dfdfdf]" />
+        </a>
 
         {/* Linkedin Button */}
         <a
           href="https://www.linkedin.com/in/adhirajsaha"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] bg-[#18559b] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
+          className="w-10 h-10 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(30,58,138,0.9)] bg-[#18559b] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
         >
           <SiLinkedin size={20} className="text-[#dfdfdf]" />
         </a>
@@ -95,10 +107,12 @@ const Hero = () => {
           href="https://github.com/adhirajcs"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-10 h-10 shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] bg-[#000] text-[#696969] rounded-md font-light transition duration-200 ease-linear flex items-center justify-center"
+          className="w-10 h-10 shadow-[0_4px_14px_0_rgb(64,64,64,39%)] hover:shadow-[0_6px_20px_rgba(64,64,64,23%)] hover:bg-[rgba(31,41,55,0.95)] bg-[#000] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
         >
           <SiGithub size={20} className="text-[#dfdfdf]" />
         </a>
+
+
       </div>
     </div>
   );
