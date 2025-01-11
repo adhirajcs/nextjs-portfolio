@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.5,
+  duration = 0.2,
   textSize = "text-sm md:text-lg",
 }) => {
   const [scope, animate] = useAnimate();
@@ -27,7 +27,7 @@ export const TextGenerateEffect = ({
         },
         {
           duration: duration,
-          delay: stagger(0.2),
+          delay: stagger(0.1),
         }
       );
     } else {

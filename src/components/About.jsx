@@ -175,7 +175,7 @@ const About = () => {
               My Skills
             </h2>
             <div
-              className={`${intro.className} flex flex-wrap gap-x-10 gap-y-4 mt-2 items-center text-center justify-center w-full`}
+              className={`${intro.className} flex flex-wrap gap-x-3 md:gap-x-6  gap-y-4 mt-2 items-center text-center justify-center w-full`}
             >
               <AnimatedTooltip items={skills} />
             </div>
