@@ -50,18 +50,6 @@ const NavBar = () => {
       ),
       href: "#education",
     },
-    // {
-    //   title: "Aceternity UI",
-    //   icon: (
-    //     <Image
-    //       src="/assets/favicon.ico"
-    //       width={20}
-    //       height={20}
-    //       alt="Aceternity Logo"
-    //     />
-    //   ),
-    //   href: "#",
-    // },
     {
       title: "Contact",
       icon: (
@@ -69,25 +57,35 @@ const NavBar = () => {
       ),
       href: "#contact",
     },
-    {
+    /* {
       title: "LinkedIn",
-      icon: (
-        <IconBrandLinkedin className="h-full w-full dark:text-blue-600" />
-      ),
+      icon: <IconBrandLinkedin className="h-full w-full dark:text-blue-600" />,
       href: "https://www.linkedin.com/in/adhirajsaha",
       target: "_blank",
     },
     {
       title: "GitHub",
-      icon: (
-        <IconBrandGithubFilled className="h-full w-full dark:text-white" />
-      ),
+      icon: <IconBrandGithubFilled className="h-full w-full dark:text-white" />,
       href: "https://github.com/adhirajcs",
       target: "_blank",
-    },
+    }, */
+    /*   {
+      title: "Aceternity UI",
+      icon: (
+        <Image
+          src="/assets/favicon.ico"
+          width={20}
+          height={20}
+          alt="Aceternity Logo"
+        />
+      ),
+      href: "#",
+    }, */
   ];
   return (
-    <div className={`${body.className} fixed bottom-0 right-4 md:left-0 md:right-0 flex items-center justify-center h-[5rem] z-50`}>
+    <div
+      className={`${body.className} fixed bottom-0 right-4 md:left-0 md:right-0 flex items-center justify-center h-[5rem] z-50`}
+    >
       <FloatingDock items={links} />
     </div>
   );

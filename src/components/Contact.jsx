@@ -3,6 +3,8 @@
 import LetterPullup from "@/components/magicui/letter-pullup";
 import ContactForm from "@/components/contact-form";
 import { Playpen_Sans, Comfortaa, Dancing_Script } from "next/font/google";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { RiTwitterXLine } from "react-icons/ri";
 
 // Import the fonts using next/font/google
 const body = Comfortaa({
@@ -32,7 +34,7 @@ const Contact = () => {
       </h1>
 
       {/* Main content with flex-row layout */}
-      <div className="flex flex-col md:flex-row justify-center md:justify-around items-start md:items-center w-full">
+      <div className="flex flex-col md:flex-row justify-center md:justify-around items-start md:items-center w-full min-h-[400px]">
         {/* Contact Form on the Left */}
         <div
           className={`${body.className} w-full md:w-5/6 lg:w-1/2 pr-0 lg:pr-8 flex justify-center`}
@@ -44,13 +46,48 @@ const Contact = () => {
         <div className="hidden lg:block lg:w-[1px] lg:bg-slate-600 lg:h-80 mx-8"></div>
 
         {/* Animation on the Right */}
-        <div className="w-auto pt-6 lg:pt-0 lg:pl-4 lg:w-1/2 flex justify-center">
-          <LetterPullup
-            words={`Thank You
+        <div className="w-full h-full pt-8 lg:pt-0 lg:pl-4 lg:w-1/2 flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center flex-1">
+            <LetterPullup
+              words={`Thank You
 for visiting.`}
-            delay={0.05}
-            className={`${dancingScript.className}`}
-          />
+              delay={0.05}
+              className={`${dancingScript.className}`}
+            />
+            
+            {/* Social Media Buttons */}
+            <div className="flex items-center space-x-4 mt-8 md:mt-16">
+              {/* X/Twitter Button */}
+              <a
+                href="https://x.com/theadhirajsaha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 shadow-[0_4px_14px_0_rgb(64,64,64,39%)] hover:shadow-[0_6px_20px_rgba(64,64,64,23%)] hover:bg-[rgba(31,41,55,0.95)] bg-[#000] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
+              >
+                <RiTwitterXLine size={20} className="text-[#dfdfdf]" />
+              </a>
+
+              {/* Linkedin Button */}
+              <a
+                href="https://www.linkedin.com/in/adhirajsaha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(30,58,138,0.9)] bg-[#18559b] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
+              >
+                <SiLinkedin size={20} className="text-[#dfdfdf]" />
+              </a>
+
+              {/* Github Button */}
+              <a
+                href="https://github.com/adhirajcs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 shadow-[0_4px_14px_0_rgb(64,64,64,39%)] hover:shadow-[0_6px_20px_rgba(64,64,64,23%)] hover:bg-[rgba(31,41,55,0.95)] bg-[#000] rounded-md text-white font-light transition duration-200 ease-linear flex items-center justify-center"
+              >
+                <SiGithub size={20} className="text-[#dfdfdf]" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
