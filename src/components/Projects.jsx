@@ -108,7 +108,7 @@ const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <PulsatingButton>View More...</PulsatingButton>
+          <PulsatingButton className={`${body.className}`}>View More...</PulsatingButton>
         </a>
       </div>
     </div>
