@@ -25,10 +25,23 @@
   background-color: rgb(30 41 59);
 }
 
-/* Firefox */
-body {
-    scrollbar-width: thin; /* Match width */
-    scrollbar-color: rgb(71 85 105) rgb(2 6 23); /* Handle color and track background */
-  }
-  
 
+
+/* For Firefox and Zen Browser */
+
+* {
+  scrollbar-width: auto;
+}
+
+html, body {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(51 65 85) rgb(2 6 23);
+}
+
+/* For Firefox compatibility on different OS */
+@-moz-document url-prefix() {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(51 65 85) rgb(2 6 23);
+  }
+}
