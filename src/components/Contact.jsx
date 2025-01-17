@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-start md:items-center w-full min-h-[400px]">
         {/* Contact Form on the Left */}
         <div
-          className={`${body.className} w-full md:w-5/6 lg:w-1/2 pr-0 lg:pr-8 flex justify-center`}
+          className={`${body.className} w-full md:w-full lg:w-3/5 pr-0 lg:pr-8 flex justify-center`}
         >
           <ContactForm />
         </div>
@@ -46,17 +46,21 @@ const Contact = () => {
         <div className="hidden lg:block lg:w-[1px] lg:bg-slate-600 lg:h-80 mx-8"></div>
 
         {/* Animation on the Right */}
-        <div className="w-full h-full pt-8 lg:pt-0 lg:pl-4 lg:w-1/2 flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center flex-1">
+        <div className="w-full h-full pt-8 lg:pt-0 lg:pl-4 lg:w-1/2 flex flex-col items-center justify-start lg:justify-between min-h-[250px] lg:min-h-[400px]">
+          {/* Thank You Animation */}
+          <div className="mt-8 lg:mt-0 lg:flex-1 flex items-center mb-12 lg:mb-0">
             <LetterPullup
               words={`Thank You
 for visiting.`}
               delay={0.05}
               className={`${dancingScript.className}`}
             />
-            
+          </div>
+
+          {/* Social Media and Sponsor Section */}
+          <div className="flex flex-col items-center space-y-6">
             {/* Social Media Buttons */}
-            <div className="flex items-center space-x-4 mt-8 md:mt-16">
+            <div className="flex items-center space-x-4">
               {/* X/Twitter Button */}
               <a
                 href="https://x.com/theadhirajsaha"
@@ -86,6 +90,15 @@ for visiting.`}
               >
                 <SiGithub size={20} className="text-[#dfdfdf]" />
               </a>
+            </div>
+
+            {/* Github Sponsorship */}
+            <div className="flex items-center justify-center">
+              <iframe
+                src="https://github.com/sponsors/adhirajcs/button"
+                title="Sponsor adhirajcs"
+                className="h-[32px] w-[114px] border-0 rounded-md"
+              ></iframe>
             </div>
           </div>
         </div>
