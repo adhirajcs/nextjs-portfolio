@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Input, TextAreaInput } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import axios from "axios";
+import { MdContentCopy } from "react-icons/md";
 
 export default function ContactForm() {
   // State to handle form inputs and submission feedback
@@ -78,20 +79,25 @@ export default function ContactForm() {
         {/* To input (non-editable) with copy button */}
         <LabelInputContainer className="mb-4">
           <Label htmlFor="to">To</Label>
-          <Input
-            id="to"
-            type="text"
-            value="adhirajsaha24@gmail.com"
-            readOnly
-            className="bg-gray-200 text-gray-600 cursor-default"
-          />
-          {/* <button
-            type="button"
-            onClick={handleCopy}
-            className="text-sm text-blue-500 hover:text-blue-700"
-          >
-            {copySuccess ? "Copied!" : "Copy"}
-          </button> */}
+          <div className="relative">
+            <Input
+              id="to"
+              type="text"
+              value="adhirajsaha24@gmail.com"
+              readOnly
+              className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 cursor-default pr-12"
+            />
+            <button
+              type="button"
+              onClick={handleCopy}
+              className={`absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
+                copySuccess ? 'text-green-500' : 'text-gray-500 dark:text-gray-400'
+              }`}
+              title={copySuccess ? "Copied!" : "Copy email"}
+            >
+              <MdContentCopy size={18} />
+            </button>
+          </div>
         </LabelInputContainer>
 
         {/* Name input */}
