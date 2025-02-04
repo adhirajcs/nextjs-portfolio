@@ -19,8 +19,8 @@ import {
   SiPython,
   SiShadcnui,
   SiPostgresql,
-  SiSupabase
-  
+  SiSupabase,
+  SiTypescript
 } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
 
@@ -46,10 +46,20 @@ const toolIcons = {
   Python: <SiPython />,
   ShadCNUI: <SiShadcnui />,
   PostgreSQL: <SiPostgresql />,
-  Supabase: <SiSupabase />
+  Supabase: <SiSupabase />,
+  TypeScript: <SiTypescript />
 };
 
 const projectslist = [
+  {
+    id: 8,
+    name: "Zen Guy",
+    description: "Zen Guy is an AI-powered Twitter bot that posts zen quotes and responds to comments.",
+    image: "/Projects-images/zen-guy.jpg",
+    tools: ["TypeScript"],
+    githubLink: "https://github.com/adhirajcs/Zen-Guy",
+    liveLink: null,
+  },
   {
     id: 7,
     name: "HR System",
