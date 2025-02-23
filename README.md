@@ -20,6 +20,7 @@ You can view the live version of my portfolio here: [Live Portfolio](https://adh
 - **NodeMailer**: For handling contact forms and email functionalities.
 - **Axios**: For making API requests.
 - **Framer Motion**: For animations and smooth interactions.
+- **UI Component Libraries**: AceternityUI, MagicUI, and Mantine for enhanced component design and functionality.
 
 ## License
 
