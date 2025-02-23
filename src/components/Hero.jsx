@@ -2,13 +2,11 @@
 
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-import { GlareCard } from "@/components/ui/glare-card";
 import { EncryptButton } from "@/components/ui/EncryptButton";
 import { Playpen_Sans, Comfortaa } from "next/font/google";
 
-import { SiGithub, SiLinkedin,  } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { RiTwitterXLine } from "react-icons/ri";
-
 
 // Import the fonts using next/font/google
 const words1Font = Playpen_Sans({
@@ -57,23 +55,12 @@ const Hero = () => {
           />
         </div>
 
-        {/* Right Side Profile Picture with Glare (only on desktop) */}
-        <div className="hidden md:block mb-6 lg:mb-0 flex-shrink-0">
-          <GlareCard className="flex items-center justify-center">
-            <img
-              src="/assets/profile-picture.png"
-              alt="Profile Picture"
-              className="w-full h-full object-cover"
-            />
-          </GlareCard>
-        </div>
-
-        {/* Profile Picture (only on mobile) */}
-        <div className="md:hidden mb-6 flex-shrink-0">
+        {/* Normal Profile Picture for all devices */}
+        <div className="mb-6 lg:mb-0 flex-shrink-0">
           <img
             src="/assets/profile-picture.png"
             alt="Profile Picture"
-            className="w-32 h-32 object-cover rounded-full shadow-lg"
+            className="w-32 h-32 object-cover rounded-full shadow-lg md:w-36 md:h-52 md:rounded-lg"
           />
         </div>
       </div>
@@ -111,8 +98,6 @@ const Hero = () => {
         >
           <SiGithub size={20} className="text-[#dfdfdf]" />
         </a>
-
-
       </div>
     </div>
   );
