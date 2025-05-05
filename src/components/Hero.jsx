@@ -67,7 +67,7 @@ const Hero = () => {
 
       <div className="mt-8 lg:mt-4 flex items-center justify-center lg:justify-start w-full space-x-4">
         {/* Cool Mode Button */}
-        <EncryptButton />
+        {/* <EncryptButton /> */}
         
         {/* X/Twitter Button */}
         <a
