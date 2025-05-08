@@ -63,9 +63,9 @@ const projectslist = [
   {
     id: 7,
     name: "HR System",
-    description: "A Human Resource Management System.",
-    image: "/Projects-images/placeholder.svg",
-    tools: ["Next.js", "React", "TailwindCSS", "ShadCNUI", "Django", "PostgreSQL", "Supabase"],
+    description: "A backend API for Human Resource Management System.",
+    image: "/Projects-images/hr-system.png",
+    tools: ["Django", "PostgreSQL", "Supabase"],
     githubLink: "https://github.com/adhirajcs/HR-System",
     liveLink: null, // No live link for this one
   },
