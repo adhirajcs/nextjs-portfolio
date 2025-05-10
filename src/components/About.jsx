@@ -65,7 +65,7 @@ const About = () => {
   //   "figma",
   // ];
 
-  const introText = `I'm a postgraduate in MCA and also hold a BCA degree. I'm a passionate web developer with a keen interest in blockchain technology. With a strong foundation in ReactJS, Python, and Django, I'm focused on creating projects that make a difference.
+  const introText = `I'm currently working as a Trainee Software Developer at Somnetics. In my role, I primarily work with Next.js, React, Express.js, and MySQL to build innovative solutions. I'm a postgraduate in MCA and also hold a BCA degree. With a strong foundation in these technologies and a keen interest in AI and blockchain, I'm focused on creating projects that make a difference.  
   In my free time, I love to listen to music, surf the internet about new technologies, or play some video games. `;
 
   const skills = [

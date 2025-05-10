@@ -3,16 +3,14 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandLinkedin,
   IconMail,
   IconHome,
   IconSchool,
   IconMoodSmile,
   IconDeviceDesktop,
-  IconBrandGithubFilled,
+  IconBriefcase,
 } from "@tabler/icons-react";
-import { Playpen_Sans, Comfortaa } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 
 // Import the fonts using next/font/google
 const body = Comfortaa({
@@ -35,6 +33,13 @@ const NavBar = () => {
         <IconMoodSmile className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#about",
+    },
+    {
+      title: "Experience",
+      icon: (
+        <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#experience",
     },
     {
       title: "Projects",

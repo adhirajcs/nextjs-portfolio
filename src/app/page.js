@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
+import { Experience } from "@/components/Experience";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="dark flex flex-col items-center justify-center text-center px-4 sm:px-6">
         <Hero />
         <About />
+        <Experience />
         <Projects />
         <Education />
         <Contact />

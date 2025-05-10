@@ -33,7 +33,7 @@ const Hero = () => {
     },
   ];
 
-  const words2 = `An Aspiring Software Developer with skills in Python, Django, React, Next.js and PostgreSQL.`;
+  const words2 = `A Trainee Software Developer with skills in JavaScript, Next.js, React, Express.js, and MySQL.`;
 
   return (
     <div
